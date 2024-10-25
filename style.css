@@ -1,77 +1,195 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
     color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
-header {
-    background-color: #0073e6;
-    padding: 1rem 0;
-    text-align: center;
-    color: white;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
+a {
     text-decoration: none;
-}
-
-.intro-section {
-    background-color: #0073e6;
-    color: white;
-    padding: 5rem 0;
-    text-align: center;
-}
-
-.intro-section .btn {
-    background-color: white;
-    color: #0073e6;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-section {
-    padding: 3rem 0;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+    color: inherit;
 }
 
 ul {
     list-style: none;
-    padding: 0;
 }
 
-.job, .project {
-    margin-bottom: 2rem;
+/* Header Styling */
+.header {
+    background-color: #333;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    transition: background-color 0.3s;
 }
 
-.contact-section ul {
+.header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00c1d4;
+}
+
+/* Home Section Styling */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('your-background-image.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #00c1d4;
+}
+
+.btn-primary {
+    background-color: #00c1d4;
+    padding: 0.75rem 2rem;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #009ca8;
+}
+
+/* Sections */
+section {
+    padding: 4rem 0;
     text-align: center;
 }
 
-.contact-section ul li {
-    margin: 10px 0;
+h2 {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 5rem 0;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #f3f4f6;
+}
+
+.skills-section ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-section ul li {
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    transition: transform 0.3s;
+}
+
+.skills-section ul li:hover {
+    transform: translateY(-5px);
+}
+
+/* Experience Section */
+.experience-section {
+    background-color: #e2e8f0;
+    padding: 5rem 0;
+}
+
+.job {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.job:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.job h3 {
+    font-size: 1.5rem;
+    color: #00c1d4;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #fff;
+}
+
+.project {
+    background-color: #f3f4f6;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #333;
+    color: white;
+    padding: 5rem 0;
+}
+
+.contact-section ul li a {
+    color: #00c1d4;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
