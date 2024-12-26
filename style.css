@@ -58,7 +58,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('your-background-image.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
@@ -103,7 +103,7 @@ h2 {
 /* About Section */
 .about-section {
     background-color: #fff;
-    padding: 5rem 0;
+    padding: 3%;
 }
 
 .about-section p {
@@ -142,7 +142,7 @@ h2 {
 /* Experience Section */
 .experience-section {
     background-color: #e2e8f0;
-    padding: 5rem 0;
+    padding: 3%;
 }
 
 .job {
@@ -192,4 +192,51 @@ h2 {
     color: #00c1d4;
     font-size: 1.1rem;
     margin-bottom: 10px;
+}
+
+.project-details{
+    text-align: justify;
+}
+.project-description{
+    padding-left: 2%;
+    font-size: 13px;
+    width: 80%;
+}
+
+.project-screenshort{
+    text-align: justify;
+}
+.screeshot-img{
+    width: 90%;
+}
+
+.grid-container {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between items */
+    grid-template-rows: auto; /* Rows will adjust based on content */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style for each grid item */
+.grid-item {
+    
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design: Adjust grid on smaller screens */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column on extra small screens */
+    }
 }
