@@ -103,7 +103,7 @@ h2 {
 /* About Section */
 .about-section {
     background-color: #fff;
-    padding: 3%;
+    padding: 5%;
 }
 
 .about-section p {
@@ -142,7 +142,7 @@ h2 {
 /* Experience Section */
 .experience-section {
     background-color: #e2e8f0;
-    padding: 3%;
+    padding: 5%;
 }
 
 .job {
@@ -165,11 +165,11 @@ h2 {
 
 /* Projects Section */
 .projects-section {
-    background-color: #fff;
+    background-color: #dffffa;
 }
 
 .project {
-    background-color: #f3f4f6;
+    background-color: #ffffff;
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 10px;
@@ -194,6 +194,14 @@ h2 {
     margin-bottom: 10px;
 }
 
+.education-section{
+    background-color: #f0f0f0
+   
+}
+
+.key-achivment{
+    background-color: #ffffff;
+}
 .project-details{
     text-align: justify;
 }
