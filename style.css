@@ -216,6 +216,7 @@ h2 {
 }
 .screeshot-img{
     width: 90%;
+    cursor: pointer;
 }
 
 .grid-container {
